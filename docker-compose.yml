@@ -1,0 +1,14 @@
+services:
+    db:
+      image: mongo
+      restart: always
+      environment:
+        - MONGO_INITDB_ROOT_USERNAME=${DB_USER}
+        - MONGO_INITDB_ROOT_PASSWORD=${DB_PASS}
+      container_name: impt_mongo
+      volumes:
+        - impt-data:/data/db
+      ports:
+        - 27019:27017
+volumes:
+  impt-data:
