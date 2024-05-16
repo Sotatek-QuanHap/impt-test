@@ -31,6 +31,10 @@
 ```bash
 $ yarn install
 ```
+## Start Mongo
+```bash
+$ docker-compose up
+```
 
 ## Running the app
 
